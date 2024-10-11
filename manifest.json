@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Automation Extension",
+    "description": "Automatically send connection requests to all profiles on LinkedIn.",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/mynetwork/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }

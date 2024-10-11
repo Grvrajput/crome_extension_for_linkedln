@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>LinkedIn Connect</title>
+  <style>
+    #connectAll {
+      /* Basic styling */
+      background-color: #bd0fe4;
+      /* Green */
+      color: white;
+      font-size: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Arial', sans-serif;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hover effect */
+    #connectAll:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+      /* Slightly enlarge */
+      box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
+      /* Larger shadow on hover */
+    }
+
+    /* Active state */
+    #connectAll:active {
+      background-color: #3e8e41;
+      transform: scale(0.98);
+      /* Slightly shrink when pressed */
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      /* Smaller shadow on active */
+    }
+
+    /* Focused state for accessibility */
+    #connectAll:focus {
+      outline: none;
+      box-shadow: 0 0 5px 2px rgba(99,102,241, 0.521);
+      /* Green glow */
+    }
+  </style>
+
+</head>
+
+<body>
+  <button id="connectAll">Connect with All</button>
+  <script src="popup.js"></script>
+</body>
+
+</html>
